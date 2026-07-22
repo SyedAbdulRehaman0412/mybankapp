@@ -15,18 +15,18 @@
             </center>
         </h1>
 
-        <a href="index.html">About Bank</a>
-        <a href="loans.html">Loans</a>
-        <a href="branches.html"> Branches</a>
-        <a href="customer registration form.html">Registration Form </a>
-        <a href="login.html"> Login </a>
-        <a href="eligibility.html"> Loan Eligibility Check </a>
-        <a href="#">EMI calculator </a>
-        <a href="open new bank account.html"> Open New Bank Account </a>
-        <a href="credit card application.html"> Credit Card Application </a>
-        <a href="customer profile update.html"> Customer Profile Update </a>
-        <a href="branch feedback.html"> Branch Feedback </a>
-        
+        <a href="index.html">About Bank</a> |
+        <a href="loans.html">Loans</a> |
+        <a href="branches.html"> Branches</a> |
+        <a href="customer registration form.html">Registration Form </a> |
+        <a href="login.html"> Login </a> |
+        <a href="eligibility.html"> Loan Eligibility Check </a> |
+        <a href="#">EMI calculator </a> |
+        <a href="open new bank account.html"> Open New Bank Account </a> |
+        <a href="credit card application.html"> Credit Card Application </a> |
+        <a href="customer profile update.html"> Customer Profile Update </a> |
+        <a href="branch feedback.html"> Branch Feedback </a> |
+
     </header>
     <hr>
     <main>
@@ -34,23 +34,41 @@
             <center> Internet Banking Login </center>
         </h1>
         <form>
-            <label> Loan Amount </label>
-            <input type="number">
-            <br>
-            <label> Interest Rate (%) </label>
-            <input type="number">
-            <br>
-            <label> Loan tenure </label>
-            <input type="text">
-            <br>
-            <label> Tenure Type </label>
-            <input type="month">
-            <br>
-            <label> EMI Start Date </label>
-            <input type="date">
-            <br>
-            <input type="submit" value="Calculate">
-            <input type="reset" value="reset">
+            <table align="center" border="1px" cellpadding="10">
+                <tr>
+                    <td><label>Loan Amount</label></td>
+                    <td> <input type="number" placeholder="Loan Amount"><br></td>
+                </tr>
+                <tr>
+                    <td> <label>Intrest Rate(%)</label>
+                    </td>
+                    <td><input type="number" placeholder="Interest Rate"><br></td>
+                </tr>
+                <tr>
+                    <td> <label>Loan Tenure</label>
+                    </td>
+                    <td><input type="number" placeholder="Loan Tenure"></td>
+                </tr>
+                <tr>
+                    <td> <label>Tenure Type</label></td>
+                    <td><select id="loan" name="loan type">
+                            <option value="month">Month</option>
+                            <option value="year">year</option>
+                            <option value="days">Days</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td> <label>EMI Start Date</label></td>
+                    <td> <input type="date" placeholder="EMI Start Date"><br></td>
+                </tr>
+                <tr>
+                    <td colspan="2" align="center">
+                        <input type="submit" value="Calculate EMI">
+                        <input type="reset" value="Reset">
+                    </td>
+                </tr>
+            </table>
         </form>
 
     </main>

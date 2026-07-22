@@ -15,18 +15,18 @@
             </center>
         </h1>
 
-        <a href="index.html">About Bank</a>
-        <a href="loans.html">Loans</a>
-        <a href="branches.html"> Branches</a>
-        <a href="customer registration form.html">Registration Form </a>
-        <a href="login.html"> Login </a>
-        <a href="eligibility.html"> Loan Eligibility Check </a>
-        <a href="emi calculator.html">EMI calculator </a>
-        <a href="open new bank account.html"> Open New Bank Account </a>
-        <a href="credit card application.html"> Credit Card Application </a>
-        <a href="#"> Customer Profile Update </a>
-        <a href="branch feedback.html"> Branch Feedback </a>
-        
+        <a href="index.html">About Bank</a> |
+        <a href="loans.html">Loans</a> |
+        <a href="branches.html"> Branches</a> |
+        <a href="customer registration form.html">Registration Form </a> |
+        <a href="login.html"> Login </a> |
+        <a href="eligibility.html"> Loan Eligibility Check </a> |
+        <a href="emi calculator.html">EMI calculator </a> |
+        <a href="open new bank account.html"> Open New Bank Account </a> |
+        <a href="credit card application.html"> Credit Card Application </a> |
+        <a href="#"> Customer Profile Update </a> |
+        <a href="branch feedback.html"> Branch Feedback </a> |
+
     </header>
     <hr>
     <main>
@@ -34,38 +34,51 @@
             <center> Customer Profile Update </center>
         </h1>
         <form>
-            <label> Name </label>
-            <input type="text">
-            <br>
-            <label> Email </label>
-            <input type="text">
-            <br>
-            <label> Mobile </label>
-            <input type="tel">
-            <br>
-            <label> Website </label>
-            <input type="url">
-            <br>
-            <label> Profile Picture </label>
-            <input type="file">
-            <br>
-            <label> City </label>
-            <select>
-                <option value="Andhra Pradesh">Andhra Pradesh</option>
-                <option value="Hyderabad">Hyderabad </option>
-                <option value="Maharastra">Maharastra</option>
-                <option value="Odissa">Odissa</option>
-                <option value="Karnataka">Karnataka</option>
-            </select>
-            <br>
-            <label> Date Of Birth </label>
-            <input type="date">
-            <br>
-            <label> Address </label>
-            <textarea rows="4" cols="20"></textarea>
-            <br>
-
-            <input type="submit" value="submit">
+            <table align="center" border="1px" cellpadding="10px">
+                <tr>
+                    <td><label>Name</label></td>
+                    <td> <input type="text" placeholder="Name"><br></td>
+                </tr>
+                <tr>
+                    <td><label>Email</label></td>
+                    <td><input type="email" placeholder="Email"><br></td>
+                </tr>
+                <tr>
+                    <td> <label>Mobile</label></td>
+                    <td> <input type="tel" placeholder="Mobile"><br></td>
+                </tr>
+                <tr>
+                    <td> <label> Website</label>
+                    </td>
+                    <td><input type="url" placeholder="Company Website"></td>
+                </tr>
+                <tr>
+                    <td> <label>Profile Picture</label></td>
+                    <td> <input type="file" placeholder="Upload Profile Picture"></td>
+                </tr>
+                <tr>
+                    <td> <label>City</label></td>
+                    <td><select id="city" name="city">
+                            <option value="Hyderabad">Hyderabad</option>
+                            <option value="Mumbair">Mumbai</option>
+                            <option value="Goa">Goa</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td> <label>DOB</label></td>
+                    <td> <input type="date" placeholder="Date of Birth"><br></td>
+                </tr>
+                <tr>
+                    <td> <label>Address</label></td>
+                    <td> <textarea rows="4" col="25" placeholder="Enter your address"></textarea></td>
+                </tr>
+                <tr>
+                    <td colspan="2" align="center">
+                        <input type="submit" value="submit" placeholder="Submit">
+                    </td>
+                </tr>
+            </table>
         </form>
 
     </main>

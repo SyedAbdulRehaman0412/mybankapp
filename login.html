@@ -15,17 +15,17 @@
             </center>
         </h1>
 
-        <a href="index.html">About Bank</a>
-        <a href="loans.html">Loans</a>
-        <a href="branches.html"> Branches</a>
-        <a href="customer registration form.html">Registration Form </a>
-        <a href="#"> Login </a>
-        <a href="eligibility.html"> Loan Eligibility Check </a>
-        <a href="emi calculator.html">EMI calculator </a>
-        <a href="open new bank account.html"> Open New Bank Account </a>
-        <a href="credit card application.html"> Credit Card Application </a>
-        <a href="customer profile update.html"> Customer Profile Update </a>
-        <a href="branch feedback.html"> Branch Feedback </a>
+        <a href="index.html">About Bank</a> |
+        <a href="loans.html">Loans</a> |
+        <a href="branches.html"> Branches</a> |
+        <a href="customer registration form.html">Registration Form </a> |
+        <a href="#"> Login </a> |
+        <a href="eligibility.html"> Loan Eligibility Check </a> |
+        <a href="emi calculator.html">EMI calculator </a> |
+        <a href="open new bank account.html"> Open New Bank Account </a> |
+        <a href="credit card application.html"> Credit Card Application </a> |
+        <a href="customer profile update.html"> Customer Profile Update </a> |
+        <a href="branch feedback.html"> Branch Feedback </a> |
     </header>
     <hr>
     <main>
@@ -33,17 +33,28 @@
             <center> Internet Banking Login </center>
         </h1>
         <form>
-            <label> Customer ID </label>
-            <input type="text">
-            <br>
-            <label> Password </label>
-            <input type="password">
-            <br>
-            <label> Remember Me </label>
-            <input type="checkbox" value="Agree">
-            <br>
-            <input type="submit" value="login">
-            <input type="reset" value="reset">
+            <table align="center" border="1px" cellpadding="10">
+                <tr>
+                    <td><label>Customer ID</label></td>
+                    <td> <input type="text" id="customerid" name="customerid" placeholder="Customer ID"><br></td>
+                </tr>
+                <tr>
+                    <td> <label>Password</label>
+                    </td>
+                    <td><input type="password" id="password" name="password" placeholder="Password"><br></td>
+                </tr>
+                <tr>
+                    <td> <label>Remember Me</label></td>
+                    <td><input type="checkbox" name="terms" value="terms" placeholder="Remember Me">I Agree</td>
+                </tr>
+                <tr>
+                    <td colspan="2" align="center">
+                        <input type="submit" value="Login">
+                        <input type="reset" value="Reset">
+                    </td>
+                </tr>
+            </table>
+
         </form>
     </main>
     <hr>

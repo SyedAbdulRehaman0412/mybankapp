@@ -15,17 +15,17 @@
             </center>
         </h1>
 
-        <a href="index.html">About Bank</a>
-        <a href="loans.html">Loans</a>
-        <a href="branches.html"> Branches</a>
-        <a href="customer registration form.html">Registration Form </a>
-        <a href="login.html"> Login </a>
-        <a href="eligibility.html"> Loan Eligibility Check </a>
-        <a href="emi calculator.html">EMI calculator </a>
-        <a href="#"> Open New Bank Account </a>
-        <a href="credit card application.html"> Credit Card Application </a>
-        <a href="customer profile update.html"> Customer Profile Update </a>
-        <a href="branch feedback.html"> Branch Feedback </a>
+        <a href="index.html">About Bank</a> |
+        <a href="loans.html">Loans</a> |
+        <a href="branches.html"> Branches</a> |
+        <a href="customer registration form.html">Registration Form </a> |
+        <a href="login.html"> Login </a> |
+        <a href="eligibility.html"> Loan Eligibility Check </a> |
+        <a href="emi calculator.html">EMI calculator </a> |
+        <a href="#"> Open New Bank Account </a> |
+        <a href="credit card application.html"> Credit Card Application </a> |
+        <a href="customer profile update.html"> Customer Profile Update </a> |
+        <a href="branch feedback.html"> Branch Feedback </a> |
 
     </header>
     <hr>
@@ -34,41 +34,61 @@
             <center> Open New Bank Account </center>
         </h1>
         <form>
-            <label> Full Name </label>
-            <input type="text">
-            <br>
-            <label> Father Name </label>
-            <input type="text">
-            <br>
-            <label> Email </label>
-            <input type="text">
-            <br>
-            <label> Date Of Birth </label>
-            <input type="date">
-            <br>
-            <label> Gender </label>
-            <input type="radio" value="male"> Male
-            <input type="radio" value="Female"> Female
-            <br>
-            <label> Deposit </label>
-            <input type="text">
-            <br>
-            <label> Acount Type </label>
-            <select>
-                <option value="Accounts">Accounts</option>
-                <option value="savings account">Saving account</option>
-                <option value="current account">current account</option>
-                <option value="zero account">zero account</option>
-            </select>
-            <br>
-            <label> Aadhaar </label>
-            <input type="file">
-            <br>
-            <label> Address </label>
-            <textarea rows="4" cols="20"></textarea>
-            <br>
-            <input type="submit" value="submit">
-            <input type="reset" value="reset">
+            <table align="center" border="1px" cellpadding="10px">
+                <tr>
+                    <td><label> Full Name </label></td>
+                    <td> <input type="text" id="customer" name="customer" placeholder="Full Name"><br></td>
+                </tr>
+                <tr>
+                    <td><label> Father Name </label></td>
+                    <td> <input type="text" id="Father" name="Father" placeholder="Father Name"><br></td>
+                </tr>
+                <tr>
+                    <td><label> Email </label></td>
+                    <td><input type="email" id="email" name="email" placeholder="Email"><br></td>
+                </tr>
+                <tr>
+                    <td><label> Date Of Birth </label></td>
+                    <td> <input type="date" id="date" name="date" placeholder="Date of Birth"><br></td>
+                </tr>
+                <tr>
+                    <td><label> Gender </label></td>
+                    <td><input type="radio" value="Male" id="gender1" name="gender">Male
+                        <input type="radio" value="Female" id="gender2" name="gender">Female
+                        <input type="radio" value="Others" id="gender3" name="gender">Others
+                    </td>
+                </tr>
+                <tr>
+                    <td><label> Deposit </label></td>
+                    <td> <input type="text" id="Deposit" name="Deposit" placeholder="enter your Deposit"><br></td>
+                </tr>
+                <tr>
+                    <td><label> Acount Type </label></td>
+                    <td> <select id="accounttype" name="accounttype">
+                            <option value="Accounts">Accounts</option>
+                            <option value="savings account">Saving account</option>
+                            <option value="current account">current account</option>
+                            <option value="zero account">zero account</option>
+                        </select></td>
+                </tr>
+                <tr>
+                    <td><label> Aadhaar </label></td>
+                    <td><input type="number" id="aadhar" name="aadhar" placeholder="Aadhar Number"><br></td>
+                </tr>
+                <tr>
+                    <td> <label> Address </label></td>
+                    <td> <textarea rows="4" col="25" placeholder="Enter your address"></textarea></td>
+                </tr>
+                <tr>
+                    
+                    <td colspan="2" align="center">
+                        <input type="submit" value="submit">
+                        <input type="reset" value="reset">
+                    </td>
+                </tr>
+
+            </table>
+
         </form>
 
     </main>
